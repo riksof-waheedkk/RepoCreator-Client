@@ -9,7 +9,6 @@ import { autoinject } from 'aurelia-dependency-injection';
 import { computedFrom } from 'aurelia-binding';
 import { Validation } from 'aurelia-validation';
 import underscore from 'underscore';
-import 'font-awesome';
 
 class Repository {
 	constructor(
