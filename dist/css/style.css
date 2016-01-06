@@ -10,16 +10,16 @@ ul li a{color:#fff;}
 .headerLogo{text-align:left;}
 .headerLogo a{display:block; padding-top:4px;}
 .headerLogo a img{height:70px; margin-top: 12px;}
-.sectionMainBackground{ background:url(../images/bgImage.png); height:567px; padding-top: 80px; position:relative;}
-.backgroundMain{font-family:'Roboto'; font-size:30px; font-weight:300; color:#333333; text-align:center; padding:50px; margin-left: auto; margin-right: auto; margin-top: 50px;}
-.backgroundMain h1{font-family:'Roboto'; font-size:72px; font-weight:300; color:#333333;}
+.sectionMainBackground{ background:#82a6d7; height:567px; padding-top: 20px; position:relative;}
+.backgroundMain{font-family:'Roboto'; font-size:30px; font-weight:300; color:#fff; text-align:center; padding:50px; margin-left: auto; margin-right: auto;}
+.backgroundMain h1{font-family:'Roboto'; font-size:72px; font-weight:300; color:#fff;}
 .newProject_Heading{font-family:'Roboto'; font-size:48px; font-weight:300; color:#555555; text-align:center; margin-top:50px;}
 ul.newProjectList{font-family:'Roboto'; font-size:30px; font-weight:300; color:#555555; padding-top: 20px;}
 .sectionBottom_TipsHeading{font-size:30px; font-family: 'Roboto'; font-weight:300; color:#555555; background:#f7f7f7; text-align:center; margin: 0 auto; line-height: 80px; margin-top: 40px;}
 .newTemplate_Heading{font-family:'Roboto'; font-size:48px; font-weight:300; color:#555555; text-align:center; margin-top:50px;}
 .section_CreatinNewTemplateMain p{font-family:'Roboto'; font-size:24px; font-weight:300; color:#555555; margin-top:30px;}
 .titleMagicApp{font-size: 24px; font-family: 'Roboto'; font-weight: 300; background: #f7f7f7; border: 1px solid #f7f7f7; margin-top: 20px; width: 70%; color:#555555; line-height: 50px;  padding-left: 10px;}
-.sectionBottom_Sponsorship{font-size: 60px; font-family: 'Roboto'; font-weight: 300; color: #ffffff; background: #33b8e8; text-align: center; margin: 0 auto; line-height: 160px; margin-top:50px;}
+.sectionBottom_Sponsorship{font-size: 60px; font-family: 'Roboto'; font-weight: 300; color: #ffffff; background: #33b8e8; text-align: center; margin: 0 auto; line-height: 160px; margin-top:50px; text-shadow: 2px 2px 1px #999;}
 .cco_heading_top{font-family:'Roboto'; font-size:36px; font-weight:100; color:#555555; background:#f7f7f7; border-bottom:1px solid #cccccc; padding: 10px;}
 .cco_heading{font-family:'Roboto'; font-size:30px; font-weight:300; color:#555555; padding-top:30px;}
 .cco_content{font-family:'Roboto'; font-size:20px; font-weight:300; color:#555555; padding-top:0px;}
@@ -29,7 +29,7 @@ ul.newProjectList{font-family:'Roboto'; font-size:30px; font-weight:300; color:#
 .sectionBottomCC0_Public{margin-top:50px; }
 .sectionPublicInnerContent{font-family:'Roboto'; font-size:24px; font-weight:300; color:#555555; padding-top:30px; text-align:justify;}
 .sectionBottom_templateRepository{font-size: 60px; font-family: 'Roboto'; font-weight: 300; color: #ffffff; background: #337990;
-text-align: center; margin: 0 auto; line-height: 160px; margin-top: 50px;}
+text-align: center; margin: 0 auto; line-height: 160px; margin-top: 50px; text-shadow: 2px 2px 1px #999;}
 .newRepository_Content{font-family:'Roboto'; font-size:30px; font-weight:300; color:#555555; padding-top:30px; text-align:center; padding-bottom: 20px;}
 .zoltuSpanIcons{float:right; padding: 5px; margin-top:3px;}
 .starIconZoltu{margin-right: 5px;}
@@ -39,7 +39,7 @@ text-align: center; margin: 0 auto; line-height: 160px; margin-top: 50px;}
 .zoltuText{float:left; padding-top: 10px;}
 .sponsoredTabs{background:#f7f7f7;font-family:'Roboto'; font-size:30px; font-weight:300; color:#555555 !important; }
 .sectionBottom_FAQ{font-size: 60px; font-family: 'Roboto'; font-weight: 300; color: #ffffff; background: #7a5993;
-text-align: center; margin: 0 auto; line-height: 160px; margin-top: 50px;} 
+text-align: center; margin: 0 auto; line-height: 160px; margin-top: 50px; text-shadow: 2px 2px 1px #999;} 
 .sectionBottom_questions{margin-top:50px;}
 .faqText{margin-bottom:0; font-family:'Roboto'; font-size:24px; font-weight:300; color:#555555;}
 .tabsIcon_menuDown{float:right; padding-top: 2px;}
@@ -63,7 +63,7 @@ text-align: center; color: #33b8e8 !important;}
 .favoriteLoginButton{text-align:center; margin-top:20px; }
 button.favoriteLogin:hover, button.favoriteLogin:active, button.favoriteLogin:focus:{width: 281px; height: 38px; border: 3px solid #40c5e5; background: white; color: #40c5e5; border-radius: 6px;    margin-top: -10px;}
 
-.sectionBottom-heading{font-size:60px; font-family: 'Roboto'; font-weight:300; color:#ffffff; background:#d9e45c; text-align:center; margin: 0 auto; line-height: 160px;}
+.sectionBottom-heading{font-size:60px; font-family: 'Roboto'; font-weight:300; color:#ffffff; background:#d9e45c; text-align:center; margin: 0 auto; line-height: 160px; text-shadow: 2px 2px 1px #999;}
 .sectionBottom{padding:100px 0;}
 .dollarIconZoltu{ font-weight:400;}
 
@@ -141,10 +141,10 @@ ul.footerSocial{list-style-type:none; padding: 0px;}
 .mobileMenuIcon .collapsed:after , .headerMenuMobileDiv:after{ display:none !important;}
 .mobileviewButton{top:20px; border:1px solid #666; border-radius:5px;}
 .tryItButtonMain{text-align:center; width:100%; position:absolute; bottom:60px;}
-.tryItButton{background:transparent; color:#000; border:3px solid #000; width:200px; height:75px; font-family: 'Roboto'; font-size:24px; font-weight:400; display:inline-block; line-height:75px; text-decoration:none; }
-.tryItButton:hover, .tryItButton:focus{text-decoration:none; color:#000;}
-.indicatorsRepoCreator{top:300px;}
-.backgroundMain h3{ font-family: 'Roboto'; font-size: 48px; font-weight: 300; color: #333333;}
+.tryItButton{background:transparent; color:#fff; border:3px solid #fff; width:200px; height:75px; font-family: 'Roboto'; font-size:24px; font-weight:400; display:inline-block; line-height:75px; text-decoration:none; }
+.tryItButton:hover, .tryItButton:focus{text-decoration:none; color:#fff;}
+.indicatorsRepoCreator{top:370px;}
+.backgroundMain h3{ font-family: 'Roboto'; font-size: 30px; font-weight: 100; color: #fff;}
 .indicatorsRepoCreator li{background:#000; border:1px solid #000;}
 
 /*Tips slider*/
@@ -192,7 +192,7 @@ text-align: center; margin: 0 auto; line-height: 160px; margin-top: 50px;}
 	.sectionBottom_Sponsorship{font-size: 38px; font-family: 'Roboto'; font-weight: 300; color: #ffffff; background: #33b8e8; text-align: center; margin: 0 auto; line-height: 160px; margin-top:50px;}
 	.zoltuTextAzure{line-height:30px; padding-top: 5px;  padding-bottom: 5px;font-family:'Roboto'; font-size:22px; font-weight:300; color:#555555;  }
 	.headerMenu li{width:90px;}
-}
+	.backgroundMain h3 { font-family: 'Roboto'; font-size: 30px; font-weight: 100; color: #fff;}
 
 @media only screen and (max-width: 768px){
 	.homeIconButtons{margin-bottom: 60px;}
@@ -215,7 +215,7 @@ text-align: center; margin: 0 auto; line-height: 160px; margin-top: 50px;}
 	.homeIcon{ height:auto;}
 	.favoritesMainInner p{ font-size:14px;}
 	.headerMenu li{width:90px;}
-	.backgroundMain h3{font-family: 'Roboto'; font-size: 40px; font-weight: 300; color: #333333;}
+	.backgroundMain h3{font-family: 'Roboto'; font-size: 24px; font-weight: 100; color: #fff;}
 	.headerMenuMobile{display:none;}
 	.titleMagicApp{width:100%;}
 	.cco_heading_top{font-size:30px;}
@@ -242,11 +242,11 @@ text-align: center; margin: 0 auto; line-height: 100px; margin-top: 50px;}
 	.zoltuSpanIcons{ margin-top:6px; font-size:16px;}
 	.zoltuTextAzure img{ height:20px; margin-top:15px;}
 	.backgroundMain{ margin-top:0px;}
-	.backgroundMain h1{ font-size:48px;}
-	.backgroundMain h3{ font-size:32px;}
+	.backgroundMain h1{ font-size:48px; margin-top:0px}
+	.backgroundMain h3{ font-size:18px;}
 	.sectionMainBackground{ height:400px; padding-top:0px;}
 	.indicatorsRepoCreator {
-		top: 220px;
+		top: 240px;
 	}
 	.headerMenu li{width:100%;}
 }
@@ -269,12 +269,12 @@ text-align: center; margin: 0 auto; line-height: 70px; margin-top: 50px;}
 	.faqText{margin-bottom:0; font-family:'Roboto'; font-size:12px; font-weight:300; color:#555555;}
 	.newRepository_Content{font-family:'Roboto'; font-size:24px; font-weight:300; color:#555555; padding-top:30px; text-align:center; padding-bottom: 20px;}
 	.sectionBottomPublicInner{margin-bottom:20px;}
-	.backgroundMain h3 {font-family: 'Roboto'; font-size: 22px ;font-weight: 300; color: #333333;}
+	.backgroundMain h3 {font-family: 'Roboto'; font-size: 14px; font-weight: 100; color: #fff;}
 	.indicatorsRepoCreator { top: 220px;}
-	.sectionMainBackground {background: url(../images/bgImage.png); height: 350px;  position: relative; padding-top: 0;}
-	.tryItButton { background: transparent; color: #000; border: 3px solid #000; width: 150px; height: 50px; font-family: 'Roboto'; font-size: 16px; font-weight: 400; display: inline-block; line-height: 50px; text-decoration: none;}
-	.backgroundMain h1 {font-family: 'Roboto'; font-size: 42px; font-weight: 300; color: #333333;}
-	.backgroundMain{font-family: 'Roboto'; font-size: 30px; font-weight: 300; color: #333333; text-align: center;  padding: 50px;  margin-left: auto;  margin-right: auto;  margin-top: 20px;}
+	.sectionMainBackground {background: #82a6d7; height: 350px;  position: relative; padding-top: 0;}
+	.tryItButton { background: transparent; color: #fff; border: 3px solid #fff; width: 150px; height: 50px; font-family: 'Roboto'; font-size: 16px; font-weight: 400; display: inline-block; line-height: 50px; text-decoration: none;}
+	.backgroundMain h1 {font-family: 'Roboto'; font-size: 42px; font-weight: 300; color: #fff;}
+	.backgroundMain{font-family: 'Roboto'; font-size: 30px; font-weight: 300; color: #fff; text-align: center;  padding: 50px;  margin-left: auto;  margin-right: auto;  margin-top: 20px;}
 	.zoltuSpanIcons{ margin-top:6px; font-size:16px;}
 	.zoltuTextAzure img{ height:20px; margin-top:15px;}
 	.favoriteLogin {width: 200px;}
@@ -284,6 +284,7 @@ text-align: center; margin: 0 auto; line-height: 70px; margin-top: 50px;}
 	.headerMenu li{width:100%;}
 	.previousSlider{margin-top:39px;height: 40px; background-image:none !important;}
 	.nextSlider{margin-top:39px;height: 40px; background-image:none !important;}
+	.backgroundMain{margin-top: 0px}
 }
 @media only screen and (max-width: 767px){
 		.MenuDiv{ display:none;}
