@@ -13,6 +13,20 @@
     var outerJQuery = $.noConflict();
     outerJQuery(function () { outerJQuery('[data-toggle="popover"]').popover(); })
 </script>
+<!-- don't add anchor links to address bar' -->
+<script>
+	document.addEventListener("click", function(mouseEvent) {
+		if (!mouseEvent) return;
+		if (!mouseEvent.target) return;
+		if (!mouseEvent.target.tagName) return;
+		if (mouseEvent.target.tagName !== "A") return;
+		var link = mouseEvent.target.getAttribute("href");
+		if (!link.startsWith('#')) return;
+		var anchor = link.substring(1);
+		document.getElementById(anchor).scrollIntoView();
+		mouseEvent.preventDefault();
+	});
+</script>
 <title>Zoltu</title>
 </head>
 <body>
