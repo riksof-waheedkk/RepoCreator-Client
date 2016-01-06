@@ -21,6 +21,7 @@
 		if (!mouseEvent.target.tagName) return;
 		if (mouseEvent.target.tagName !== "A") return;
 		var link = mouseEvent.target.getAttribute("href");
+		if (!link) return;
 		if (!link.startsWith('#')) return;
 		var anchor = link.substring(1);
 		document.getElementById(anchor).scrollIntoView();
