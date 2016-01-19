@@ -7,7 +7,7 @@ import { Router } from 'aurelia-router';
 import { EventAggregator } from 'aurelia-event-aggregator';
 import { autoinject } from 'aurelia-dependency-injection';
 import { computedFrom } from 'aurelia-binding';
-import { Validation } from 'aurelia-validation';
+import { Validation, ValidationGroup } from 'aurelia-validation';
 import underscore from 'underscore';
 
 class Repository {
@@ -50,6 +50,8 @@ enum Sections {
 
 @autoinject
 export class ChooseRepository {
+	private validationGroup: ValidationGroup;
+
 	private allTemplates: Repository[] = [];
 	private favoriteTemplates: Repository[] = [];
 	private sponsoredTemplates: Repository[] = [];
@@ -59,6 +61,7 @@ export class ChooseRepository {
 	protected selectedSection: Sections = Sections.SPONSORED;
 
 	protected searchInput: string;
+	protected searching: boolean = false;
 
 	constructor(
 		private oAuth: OAuth,
@@ -67,9 +70,9 @@ export class ChooseRepository {
 		private gitHub: GitHub,
 		private router: Router,
 		private eventAggregator: EventAggregator,
-		protected validation: Validation
+		private validation: Validation
 	) {
-		this.validation = validation.on(this)
+		this.validationGroup = validation.on(this)
 			.ensure('searchInput')
 			.isNotEmpty();
 	}
@@ -127,7 +130,7 @@ export class ChooseRepository {
 	}
 
 	protected search = () => {
-		this.validation.validate().then(() => {
+		this.validationGroup.validate().then(() => {
 			this.clearSearchResults();
 			this.gitHub.search(this.searchInput).then(searchResults => {
 				let resultTemplates = underscore(searchResults).map(searchResult => new Repository(searchResult.owner.login, searchResult.name, false, false, false, true));
