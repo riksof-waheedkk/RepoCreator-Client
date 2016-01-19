@@ -103,7 +103,7 @@
 					</div>
 					<div class="panel-collapse collapse" class.bind="isSearchSelected ? 'in' : ''">
 						<div class="panel-body">
-							<form novalidate submit.delegate="search()" class="search-area ${validation.result.properties.searchInput.isDirty && !validation.result.properties.searchInput.isValid ? 'has-warning' : ''}">
+							<form novalidate submit.delegate="search()" class="search-area ${validationGroup.result.properties.searchInput.isDirty && !validationGroup.result.properties.searchInput.isValid ? 'has-warning' : ''}">
 								<div class="input-group">
 									<input type="text" class="form-control search-box" placeholder="GitHub Search Terms." value.two-way="searchInput"/>
 									<span class="input-group-addon search-button">
@@ -111,13 +111,13 @@
 											<img src="resources/icons/Search.svg" height="36" disabled.bind="inputValidated"/>
 										</a>
 									</span>
-									<div id="loading"  if.bind="searching">
+									<div id="loading" if.bind="searching">
 										<li id="loading-image" class="loader" style="list-style-type: none;">
 											<i class="fa fa-spinner fa-spin fa-2x"></i>
 										</li>
 									</div>
 								</div>
-								<p class="help-block aurelia-validation-message" show.bind="validation.result.properties.searchInput.isDirty && !validation.result.properties.searchInput.isValid">This field is required.</p>
+								<p class="help-block aurelia-validation-message" show.bind="validationGroup.result.properties.searchInput.isDirty && !validationGroup.result.properties.searchInput.isValid">This field is required.</p>
 							</form>
 							<div>
 								<div class="data-row" repeat.for="template of resultTemplates">
