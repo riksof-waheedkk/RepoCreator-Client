@@ -9,7 +9,8 @@ export class RepoCreator {
 	routes = [
 		{ route: ['', 'choose'], moduleId: './choose-repository', nav: false, title: 'Choose a Template' },
 		{ route: 'name/:owner/:name', moduleId: './choose-name', nav: false, title: 'Choose a Name' },
-		{ route: 'replacements/:templateOwner/:templateName/:destinationName', moduleId: './enter-replacements', nav: false, title: 'Replacements' }
+		{ route: 'replacements/:templateOwner/:templateName/:destinationName', moduleId: './enter-replacements', nav: false, title: 'Replacements' },
+		{ route: 'sponsorship', moduleId: './sponsorship', nav: false, title: 'My Sponsorships' }
 	];
 
 	public constructor(private eventAggregator: EventAggregator) {

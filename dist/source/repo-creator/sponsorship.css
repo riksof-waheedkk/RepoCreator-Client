@@ -1,0 +1,99 @@
+.choose-repository .outlined {
+	text-shadow:
+	-1px -1px 0 #000,
+	 1px -1px 0 #000,
+	-1px  1px 0 #000,
+	 1px  1px 0 #000;
+}
+.choose-repository a:hover,a:link,a:visited{
+	text-decoration: none;
+	outline:none;
+}
+/**** total panel SPONSORED,FAVORITES,POPULAR,SEARCH   ****/
+.choose-repository .panel-group > .panel{
+	border-radius:11px;
+	border:1px solid #a0e1f0;
+}
+.choose-repository .panel-default > .panel-heading + .panel-collapse > .panel-body {
+	border-top-style:none;
+}
+/**** single panel SPONSORED,FAVORITES,POPULAR,SEARCH   ****/
+.choose-repository .panel-default > .panel-heading{
+	background: #a0e1f0;
+	color: #444444;
+	border-radius:0px;
+	border: 1px solid #46c7e6;
+	height:40px;
+	padding:0px;
+}
+.choose-repository .panel-default > .panel-top{
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+.choose-repository .sponsorship-title{
+	padding-top:11px;
+	padding-bottom:11px;
+	padding-left:20px;
+	padding-right:20px;
+	display:block;
+}
+.choose-repository .indicator{
+	color:#608e99;
+}
+/*** all inner panel ***/ 
+.choose-repository .panel-collapse > .panel-body{
+	position:relative;
+	overflow:auto;
+	padding:0px;
+	margin:5px;
+}
+/*** inside of SPONSORED ****/
+.choose-repository .data-row{
+	margin-left:20px;
+	margin-right:20px;
+	line-height:1.6;
+	border-bottom:1px solid #e1e1e1;
+	position: relative;
+	padding: 10px 0;
+	overflow-wrap: break-word;
+}
+.choose-repository .data-link{
+	color:black;
+	display:block;
+	text-overflow: ellipsis;
+	padding-right: 35px;
+	overflow: hidden;
+	padding-left: 20px;
+}
+.choose-repository .data-link:hover{
+	color:#6ccfe9;
+}
+.choose-repository .data-inner-link{
+	top: 50%;
+	right: 0px;
+	position: absolute;
+	line-height: 1;
+	margin-top: -7px;
+	text-align:right;
+}
+/*** inside of FAVORITES ****/
+.choose-repository .inside-favorites{
+	text-align:center;
+}
+.choose-repository .fav-button{
+	width:281px;
+	height:38px;
+	border:3px solid #40c5e5;
+	background:white;
+	color:#40c5e5;
+	border-radius:6px;
+}
+.data-row:last-child {
+	border-bottom: none;
+}
+.data-link-img {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	margin-top: -10px;
+}
