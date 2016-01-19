@@ -1,40 +1,35 @@
 <template>
-    <require from="./sponsorship.css"></require>
-
-    <div class="container-fluid choose-repository">
-        <div class="row">
-            <div class="col-xs-12 panel-group">
-                <div class="panel panel-default">
-                    <div class="panel-heading panel-top">
-                        <h4 class="panel-title">
-                            <a class="sponsorship-title">
-                            MY SPONSORSHIPS<i class="indicator glyphicon pull-right glyphicon-chevron-down"></i>
-                            </a>
-                        </h4>
-                    </div>
-                    <div class="panel-collapse collapse in">
-                        <div class="panel-body">
-                            <div class="data-row" repeat.for="template of repositories">
-                                <a href="" class="data-link" click.delegate="$parent.repoSelected(template)"><img src="resources/icons/Repo.svg" class="data-link-img" style="padding-right:12px;"/>
-                                    ${template.owner}: ${template.name}
-                                    <div class="data-inner-link">
-                                        <a href="" style="margin-right:7px;" click.delegate="$parent.cancelSponsorship(template)">
-                                            <i class="fa fa-remove outlined" ></i>
-                                        </a>
-                                        
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="panel-body inside-favorites" if.bind="!loggedIn">
-                            <div class="fav-label">Login with GitHub to see your repository.</div>
-                            <div><img src="resources/icons/GitHub.svg"></img></div>
-                            <button class="fav-button" type="submit" click.delegate="fetchRepositories()">LOG IN</button>
-                        </div>                      
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
+	<require from="./sponsorship.css"></require>
+	<div class="container-fluid choose-repository">
+		<div class="row">
+			<div class="col-xs-12 panel-group">
+				<div class="panel panel-default">
+					<div class="panel-heading panel-top">
+						<h4 class="panel-title">
+							<a class="sponsorship-title">MY SPONSORSHIPS<i class="indicator glyphicon pull-right glyphicon-chevron-down"></i></a>
+						</h4>
+					</div>
+					<div class="panel-collapse collapse in">
+						<div class="panel-body">
+							<div class="data-row" repeat.for="repository of repositories">
+								<a href="" class="data-link" click.delegate="$parent.repoSelected(repository)"><img src="resources/icons/Repo.svg" class="data-link-img" style="padding-right:12px;" /> ${repository.owner}: ${repository.name}
+									<div class="data-inner-link">
+										<a href="" style="margin-right:7px;" click.delegate="$parent.cancelSponsorship(repository)">
+											<i class="fa fa-remove outlined"></i>
+										</a>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="panel-body inside-favorites" if.bind="!loggedIn">
+							<div class="fav-label">Login with GitHub to see your repository.</div>
+							<div><img src="resources/icons/GitHub.svg"></img>
+							</div>
+							<button class="fav-button" type="submit" click.delegate="fetchRepositories()">LOG IN</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </template>
