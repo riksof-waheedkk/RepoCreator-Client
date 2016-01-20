@@ -1,7 +1,7 @@
 import { customElement, useView } from 'aurelia-templating';
 import { EventAggregator } from 'aurelia-event-aggregator';
 import jquery from 'jquery';
-import 'bootstrap';
+//import 'bootstrap';
 
 @customElement('error-modal')
 @useView('./error-modal.html')

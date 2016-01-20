@@ -1,7 +1,7 @@
 import { customElement, useView } from 'aurelia-templating';
 import { Router } from 'aurelia-router';
 import jquery from 'jquery';
-import 'bootstrap';
+//import 'bootstrap';
 
 @customElement('complete-modal')
 @useView('./complete-modal.html')
@@ -26,7 +26,7 @@ export class CompleteModal {
 		jquery('#complete-modal-id').modal('hide');
 		window.location.href = this.newRepoLink;
 	}
-	
+
 	protected startOver() {
 		jquery('#complete-modal-id').modal('hide');
 		this.router.navigate("choose");

@@ -1,6 +1,6 @@
 import { customElement, useView, bindable } from 'aurelia-templating';
 import jquery from 'jquery';
-import 'bootstrap';
+//import 'bootstrap';
 
 @customElement('progress-modal')
 @useView('./progress-modal.html')
@@ -9,7 +9,7 @@ export class ProgressModal {
 	public title: string;
 	@bindable
 	public id: string;
-	
+
 	protected get modalId(): string {
 		return `modal-${this.id}`;
 	}
