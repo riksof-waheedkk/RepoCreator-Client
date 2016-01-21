@@ -1,15 +1,16 @@
-header{height:100px; width:100%; background:#fff;}
+header{height:100px; width:100%; background:#fff; position: fixed; top: 0px; z-index: 999; border-bottom: 1px solid #fff;}
 .headerMenu{float: right; padding:0px;}
 ul li a:focus, ul li a:hover {color: #fff; text-decoration: none;}
 ul li a{color:#fff;}
 .start{background:#d9e45c; }
-.pricing{background:#00a6e2;}
-.tryIt{background:#005874;}
-.faq{background:#592f78;}
-.contact{background:#f59733;}
+.pricing{background:#33b8e8 ;}
+.tryIt{background:#005874 ;}
+.faq{background:#592f78 ;}
+.contact{background:#f59733 ;}
 .headerLogo{text-align:left;}
-.headerLogo a{display:block; padding-top:4px;}
+.headerLogo a{display:block; padding-top:4px; height:70px; width:158px;}
 .headerLogo a img{height:70px; margin-top: 12px;}
+#home{padding-top: 100px;}
 .sectionMainBackground{ background:#82a6d7; height:567px; padding-top: 20px; position:relative;}
 .backgroundMain{font-family:'Roboto'; font-size:30px; font-weight:300; color:#fff; text-align:center; padding:50px; margin-left: auto; margin-right: auto;}
 .backgroundMain h1{font-family:'Roboto'; font-size:72px; font-weight:300; color:#fff;}
@@ -49,8 +50,8 @@ text-align: center; margin: 0 auto; line-height: 160px; margin-top: 50px; text-s
 text-align: center; color: #33b8e8 !important;}
 .headerMain{text-align:center;}
 .headerMenu{ clear:both; margin:0;}
-.headerMenu li{ float:left; font-family:'Roboto'; font-size:24px; font-weight:300; color:#ffffff; width:120px; line-height: 100px; list-style:none;}
-.headerMenu li a{ display:block; float:left; font-family:'Roboto'; font-size:20px; font-weight:300; color:#ffffff; width:100%; line-height: 100px;}
+.headerMenu li{ float:left; font-family:'Roboto'; font-size:24px; font-weight:300; color:#ffffff; width:120px; line-height: 99px; list-style:none;}
+.headerMenu li a{ display:block; float:left; font-family:'Roboto'; font-size:20px; font-weight:300; color:#ffffff; width:100%; line-height: 99px;}
 .headerMenu li:last-child{ margin-right:0px;}
 .homeIcon{text-align:center;}
 .mainSection{background:#dbf2f4; width:100%; padding:50px 0;}
