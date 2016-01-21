@@ -28,20 +28,26 @@ var _rollbarConfig = {
     var outerJQuery = $.noConflict();
     outerJQuery(function () { outerJQuery('[data-toggle="popover"]').popover(); })
 </script>
-<!-- don't add anchor links to address bar' -->
-<script>
-	document.addEventListener("click", function(mouseEvent) {
-		if (!mouseEvent) return;
-		if (!mouseEvent.target) return;
-		if (!mouseEvent.target.tagName) return;
-		if (mouseEvent.target.tagName !== "A") return;
-		var link = mouseEvent.target.getAttribute("href");
-		if (!link) return;
-		if (!link.startsWith('#')) return;
-		var anchor = link.substring(1);
-		document.getElementById(anchor).scrollIntoView();
-		mouseEvent.preventDefault();
-	});
+<script type="text/javascript">
+jQuery(document).ready(function($) {
+ $(".scroll").click(function(event) {
+    if ( this.hash ) {
+        if(this.hash == "#home")
+            var scrollTop = $(this.hash).offset().top;
+        else
+            var scrollTop = $(this.hash).offset().top-100;
+            
+      event.preventDefault();
+      $('html,body').animate({scrollTop:scrollTop},1000);
+    }
+    if($("#bs-example-navbar-collapse-1").hasClass("in")){
+        $("#bs-example-navbar-collapse-1").animate({height:0},200,function() {
+            $("#bs-example-navbar-collapse-1").attr('aria-expanded',"false");
+            $("#bs-example-navbar-collapse-1").removeClass("in");
+        });        
+    }
+ });
+});
 </script>
 <title>Zoltu</title>
 </head>
@@ -49,17 +55,17 @@ var _rollbarConfig = {
 	<header>
     	<div class="container headerMain">
             <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 headerLogo">
-                 <a href="#">
+                 <a class="scroll" href="#home">
                     <img alt="Brand" src="images/Zoltu-Logo-Web.png">
                  </a>
             </div>
             <div class="col-lg-9 col-md-9 col-sm-8 col-xs-12 MenuDiv">
                 <ul class="headerMenu">
-                    <li><a class="start" href="#startSection">Start</a></li>
-                    <li><a class="pricing" href="#pricingSection">Pricing</a></li>
-                    <li><a class="tryIt" href="#trySection">Try it!</a></li>
-                    <li><a class="faq" href="#faqSection">FAQ</a></li>
-                    <li><a class="contact" href="https://help.zoltu.io/">Support</a></li>
+                    <li><a class="scroll start" href="#startSection">Start</a></li>
+                    <li><a class="scroll pricing" href="#pricingSection">Pricing</a></li>
+                    <li><a class="scroll tryIt" href="#trySection">Try it!</a></li>
+                    <li><a class="scroll faq" href="#faqSection">FAQ</a></li>
+                    <li><a class="scroll contact" href="https://help.zoltu.io/">Support</a></li>
                 </ul>
             </div>
             <div class="clearfix"></div>
@@ -74,17 +80,17 @@ var _rollbarConfig = {
             <div class="collapse headerMenuMobileDiv" id="bs-example-navbar-collapse-1">
                 <div class="responsiveLists">
                     <ul class="headerMenu headerMenuMobile">
-                        <li><a class="start" data-toggle="collapse" data-target=".collapse.in" href="#startSection">Start</a></li>
-                        <li><a class="pricing" data-toggle="collapse" data-target=".collapse.in" href="#pricingSection">Pricing</a></li>
-                        <li><a class="tryIt" data-toggle="collapse" data-target=".collapse.in" href="#trySection">Try it!</a></li>
-                        <li><a class="faq" data-toggle="collapse" data-target=".collapse.in" href="#faqSection">FAQ</a></li>
+                        <li><a class="scroll start" href="#startSection">Start</a></li>
+                        <li><a class="scroll pricing" href="#pricingSection">Pricing</a></li>
+                        <li><a class="scroll tryIt" href="#trySection">Try it!</a></li>
+                        <li><a class="scroll faq" href="#faqSection">FAQ</a></li>
                         <li><a class="contact" href="https://help.zoltu.io/">Support</a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </header>
-    <section>
+    <section id="home">
     	<div class="sectionMainBackground">
             <div >
                 <div id="myCarousel" class="carousel slide" data-ride="carousel">
