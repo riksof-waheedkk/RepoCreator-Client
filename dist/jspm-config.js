@@ -37,7 +37,7 @@ System.config({
     "aurelia-router": "npm:aurelia-router@1.0.0-beta.1",
     "aurelia-templating": "npm:aurelia-templating@1.0.0-beta.1.0.2",
     "aurelia-validation": "npm:aurelia-validation@0.6.0",
-    "auth0-lock": "bower:auth0-lock@8.0.4",
+    "auth0-lock": "github:auth0/lock@8.1.5",
     "bootstrap": "github:twbs/bootstrap@3.3.6",
     "complete-modal": "local-component/complete-modal",
     "css": "github:systemjs/plugin-css@0.1.20",
